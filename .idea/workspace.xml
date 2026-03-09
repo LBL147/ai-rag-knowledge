@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b67b9708-9782-42f4-ab56-6bad92480236" name="Changes" comment="" />
+    <list default="true" id="b67b9708-9782-42f4-ab56-6bad92480236" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-api/src/main/java/cn/bugstack/xfg/dev/tech/api/IAiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/OllamaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/RedisClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/RedisClientConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/src/main/java/cn/bugstack/xfg/dev/tech/trigger/http/OllamaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +31,17 @@
       <list>
         <option value="module-info" />
         <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -29,36 +52,71 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3Abepj30qFUWxQ03Y4blkCJWFGZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/work/ai-rag-knowledge/ai-rag-knowledge",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;3-stream-api&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/ai-rag-knowledge/ai-rag-knowledge/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-app\src\main\java\cn\bugstack\xfg\dev\tech" />
+      <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-app\src\main\resources" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\docs\dev-ops" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-api\src\main\java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.bugstack.xfg.dev.tech" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xfg-dev-tech-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.xfg.dev.tech.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.xfg.dev.tech.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,11 +126,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772865883553</updated>
-      <workItem from="1772865884634" duration="922000" />
+      <workItem from="1772865884634" duration="1580000" />
+      <workItem from="1772977288935" duration="59000" />
+      <workItem from="1772977362319" duration="1004000" />
+      <workItem from="1772981493693" duration="3145000" />
+      <workItem from="1773033902030" duration="5744000" />
+      <workItem from="1773040579997" duration="602000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化项目">
+      <option name="closed" value="true" />
+      <created>1772866860403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772866860403</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="3-stream-api" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
   </component>
 </project>
