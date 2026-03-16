@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b67b9708-9782-42f4-ab56-6bad92480236" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/java/cn/bugstack/xfg/dev/tech/test/RAGTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/resources/data/file.text" afterDir="false" />
+    <list default="true" id="b67b9708-9782-42f4-ab56-6bad92480236" name="Changes" comment="Ollama RAG 知识库上传、解析和验证">
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-api/src/main/java/cn/bugstack/xfg/dev/tech/api/IRAGService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-api/src/main/java/cn/bugstack/xfg/dev/tech/api/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/src/main/java/cn/bugstack/xfg/dev/tech/trigger/http/RAGController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/OllamaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/OllamaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/java/cn/bugstack/xfg/dev/tech/test/RAGTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/java/cn/bugstack/xfg/dev/tech/test/RAGTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/resources/data/file.text" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/resources/data/file.text" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,41 +55,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;5-rag&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/work/ai-rag-knowledge/ai-rag-knowledge/xfg-dev-tech-app/src/test/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "6-rag-api",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/work/ai-rag-knowledge/ai-rag-knowledge/xfg-dev-tech-api/src/main/java/cn/bugstack/xfg/dev/tech/api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-api\src\main\java\cn\bugstack\xfg\dev\tech\api" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-app\src\test\resources" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-app\src\main\java\cn\bugstack\xfg\dev\tech" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-app\src\main\resources" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\docs\dev-ops" />
-      <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-api\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.bugstack.xfg.dev.tech.api" />
       <recent name="cn.bugstack.xfg.dev.tech" />
     </key>
   </component>
@@ -121,6 +121,22 @@
       <option name="PACKAGE_NAME" value="cn.bugstack.xfg.dev.tech.test" />
       <option name="MAIN_CLASS_NAME" value="cn.bugstack.xfg.dev.tech.test.RAGTest" />
       <option name="METHOD_NAME" value="chat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RAGTest.printDbConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xfg-dev-tech-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.xfg.dev.tech.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.xfg.dev.tech.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.xfg.dev.tech.test.RAGTest" />
+      <option name="METHOD_NAME" value="printDbConfig" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,8 +175,8 @@
       <list>
         <item itemvalue="JUnit.RAGTest.chat" />
         <item itemvalue="JUnit.RAGTest.upload" />
+        <item itemvalue="JUnit.RAGTest.printDbConfig" />
         <item itemvalue="JUnit.RAGTest" />
-        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
@@ -223,6 +239,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+    <MESSAGE value="Ollama RAG 知识库上传、解析和验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ollama RAG 知识库上传、解析和验证" />
   </component>
 </project>

@@ -18,6 +18,7 @@ import org.springframework.ai.reader.tika.TikaDocumentReader;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.ai.vectorstore.PgVectorStore;
 import org.springframework.ai.vectorstore.SearchRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -67,7 +68,7 @@ public class RAGTest {
 
     @Test
     public void chat(){
-        String question = "你是谁，朱昊，今年多少岁？";
+        String question = "介绍一下陈弘棣？";
 
         // 2. 给AI定“规矩”（系统提示词）：
         // 大白话翻译：必须用DOCUMENTS里的信息回答，要准确；不知道就说不知道；回答必须用中文
@@ -107,8 +108,57 @@ public class RAGTest {
         ChatResponse chatResponse = ollamaChatClient.call(new Prompt(messages, OllamaOptions.create().withModel("deepseek-r1:1.5b")));
 
         // 9. 打印AI的回答：方便看结果
-        log.info("检索结果条数: {}", documents.size());
-        documents.forEach(doc -> log.info("检索内容: {}", doc.getContent()));
+// ===== 用户提问 =====
+        log.info("\n================ 对话开始 ================");
+
+// 打印用户问题
+        log.info("【用户】");
+        log.info("{}", question);
+        log.info("");
+
+//// ===== 检索结果 =====
+//        log.info("【知识库检索】");
+//        log.info("命中 {} 条相关内容", documents.size());
+//
+//// 遍历打印检索内容
+//        int index = 1;
+//        for (Object doc : documents) {
+//            String content = doc.toString();
+//            log.info("证据 {}: {}", index++, content);
+//        }
+//
+//        log.info("");
+
+// ===== AI回答 =====
+        String answer = chatResponse.getResult().getOutput().getContent();
+
+        log.info("【AI】");
+        log.info("{}", answer);
+
+        log.info("================ 对话结束 ================\n");
+    }
+
+
+
+    @Autowired
+    private org.springframework.core.env.Environment environment;
+
+    @Autowired
+    private javax.sql.DataSource dataSource;
+
+    @Test
+    public void printDbConfig() throws Exception {
+        System.out.println("activeProfiles=" + java.util.Arrays.toString(environment.getActiveProfiles()));
+        System.out.println("url=" + environment.getProperty("spring.datasource.url"));
+        System.out.println("username=" + environment.getProperty("spring.datasource.username"));
+        System.out.println("password=" + environment.getProperty("spring.datasource.password"));
+        System.out.println("dataSource=" + dataSource);
+
+        try (java.sql.Connection conn = dataSource.getConnection()) {
+            System.out.println("db url=" + conn.getMetaData().getURL());
+            System.out.println("db user=" + conn.getMetaData().getUserName());
+            System.out.println("ok");
+        }
     }
 
 }
