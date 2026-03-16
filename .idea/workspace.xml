@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b67b9708-9782-42f4-ab56-6bad92480236" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/java/cn/bugstack/xfg/dev/tech/test/RAGTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/test/resources/data/file.text" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/OllamaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config/OllamaConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xfg-dev-tech-trigger/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="3-stream-api" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +44,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -48,34 +56,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "4-stream-ui",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/ai-projects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;5-rag&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/ai-rag-knowledge/ai-rag-knowledge/xfg-dev-tech-app/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-app\src\test\resources" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-app\src\main\java\cn\bugstack\xfg\dev\tech" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\xfg-dev-tech-app\src\main\resources" />
       <recent name="C:\work\ai-rag-knowledge\ai-rag-knowledge\docs\dev-ops" />
@@ -85,7 +94,54 @@
       <recent name="cn.bugstack.xfg.dev.tech" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RAGTest.chat">
+    <configuration name="RAGTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xfg-dev-tech-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.xfg.dev.tech.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.xfg.dev.tech.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.xfg.dev.tech.test.RAGTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RAGTest.chat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xfg-dev-tech-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.xfg.dev.tech.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.xfg.dev.tech.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.xfg.dev.tech.test.RAGTest" />
+      <option name="METHOD_NAME" value="chat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RAGTest.upload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xfg-dev-tech-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.xfg.dev.tech.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.xfg.dev.tech.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.xfg.dev.tech.test.RAGTest" />
+      <option name="METHOD_NAME" value="upload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="xfg-dev-tech-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.xfg.dev.tech.Application" />
@@ -101,6 +157,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RAGTest.chat" />
+        <item itemvalue="JUnit.RAGTest.upload" />
+        <item itemvalue="JUnit.RAGTest" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Spring Boot.Application" />
       </list>
@@ -120,6 +179,10 @@
       <workItem from="1772981493693" duration="3145000" />
       <workItem from="1773033902030" duration="5744000" />
       <workItem from="1773040579997" duration="602000" />
+      <workItem from="1773425615292" duration="670000" />
+      <workItem from="1773426297324" duration="646000" />
+      <workItem from="1773638623879" duration="4664000" />
+      <workItem from="1773643393719" duration="848000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <option name="closed" value="true" />
